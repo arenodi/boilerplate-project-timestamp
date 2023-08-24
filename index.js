@@ -18,11 +18,19 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/views/index.html");
 });
 
+<<<<<<< HEAD
+=======
+// empty request
+>>>>>>> 7415a1d4039c1b4094851463cfb8884ae0ecda2f
 app.get("/api/", (req, res) => {
   let now = new Date();
   res.json({ unix: now.getTime(), utc: now.toUTCString() });
 });
 
+<<<<<<< HEAD
+=======
+// endpoint with date
+>>>>>>> 7415a1d4039c1b4094851463cfb8884ae0ecda2f
 app.get("/api/:date", (req, res) => {
   let inputDate;
   if (/^[0-9]+$/.test(req.params.date)) {
